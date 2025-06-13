@@ -1,0 +1,30 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: to-do-list-app
+    ports:
+      - "8080:80"
+    volumes:
+      - ./public:/var/www/html
+      - ./src:/var/www/html/src
+    depends_on:
+      - db
+
+  db:
+    image: postgres:17.5
+    container_name: to-do-list-db
+    restart: always
+    environment:
+      POSTGRES_DB: notes_db
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: secret
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+      - ./src/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+volumes:
+  db_data:

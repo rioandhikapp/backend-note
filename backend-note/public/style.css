@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Playfair+Display&display=swap');
+
+body {
+    background: url('https://www.transparenttextures.com/patterns/french-stucco.png') repeat;
+    background-color: #f5f0e6;
+    font-family: 'Playfair Display', serif;
+    color: #3e2c1c;
+}
+
+/* Header */
+header {
+    background-color: #5c3a21;
+    color: #fcecc1;
+    font-family: 'Cinzel', serif;
+    border-bottom: 4px solid #8b5e3c;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Sidebar */
+.sidebar {
+    background: url('https://www.transparenttextures.com/patterns/wood-pattern.png') repeat;
+    background-color: #5c3a21;
+    color: #fdf5e6;
+    min-height: 100vh;
+    width: 250px;
+    border-right: 3px solid #8b5e3c;
+    font-family: 'Cinzel', serif;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar h4 {
+    border-bottom: 1px solid #f0e0c6;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #fcecc1;
+}
+
+.sidebar .nav-link {
+    color: #fcecc1;
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #8b5e3c;
+    color: #fffbe7;
+    text-decoration: none;
+}
+
+.sidebar .nav-link i {
+    margin-right: 10px;
+    color: #e8cfa3;
+}
+
+/* Container */
+.container {
+    padding: 30px;
+}
+
+/* Card Notes */
+.card {
+    border: none;
+    border-radius: 15px;
+    background-color: #fffefb;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+    font-family: 'Playfair Display', serif;
+    border: 1px solid #c8bfa8;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-header {
+    background-color: #7c5732;
+    color: #fdf5e6;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-family: 'Cinzel', serif;
+    font-size: 18px;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 16px;
+    color: #3e2c1c;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #8b5e3c;
+    border: none;
+    font-family: 'Cinzel', serif;
+}
+
+.btn-primary:hover {
+    background-color: #5c3a21;
+}
+
+.btn-warning, .btn-danger {
+    font-family: 'Cinzel', serif;
+}
+
+.modal-header {
+    background-color: #5c3a21;
+    color: #fffbe7;
+    font-family: 'Cinzel', serif;
+}
+
+.modal-content {
+    border-radius: 15px;
+}
+
+/* Alert Message */
+.alert-success {
+    background-color: #d9caa3;
+    color: #3e2c1c;
+    border: 1px solid #b8a67f;
+    font-family: 'Cinzel', serif;
+}
